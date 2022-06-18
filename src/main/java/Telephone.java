@@ -18,5 +18,11 @@ public class Telephone {
         this.number = number;
     }
 
+    public String getDdd() {
+        return ddd;
+    }
 
+    public String getNumber() {
+        return number;
+    }
 }
