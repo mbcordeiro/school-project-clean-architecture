@@ -7,4 +7,8 @@ public class Cpf {
         }
         this.number = number;
     }
+
+    public String getNumber() {
+        return number;
+    }
 }
