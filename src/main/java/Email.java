@@ -7,4 +7,8 @@ public class Email {
         }
         this.address = address;
     }
+
+    public String getAddress() {
+        return address;
+    }
 }
