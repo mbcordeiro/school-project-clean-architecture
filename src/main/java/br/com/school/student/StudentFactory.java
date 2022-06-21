@@ -1,3 +1,5 @@
+package br.com.school.student;
+
 public class StudentFactory {
     private Student student;
 

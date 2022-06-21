@@ -1,3 +1,5 @@
+package br.com.school.student;
+
 public class Telephone {
     private String ddd;
     private String number;

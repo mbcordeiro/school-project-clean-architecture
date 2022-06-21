@@ -1,3 +1,5 @@
+package br.com.school.student;
+
 public class Email {
     private String address;
 

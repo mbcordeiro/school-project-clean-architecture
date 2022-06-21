@@ -1,3 +1,5 @@
+package br.com.school.student;
+
 public class Cpf {
     private String number;
 

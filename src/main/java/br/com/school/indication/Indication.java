@@ -1,3 +1,7 @@
+package br.com.school.indication;
+
+import br.com.school.student.Student;
+
 import java.time.LocalDateTime;
 
 public class Indication {
