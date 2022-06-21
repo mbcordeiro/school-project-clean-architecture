@@ -16,6 +16,6 @@ class CpfTest {
     @Test
     void shouldCreateCpfValid() {
         final var cpf = new Cpf("123.456.789-00");
-        assertEquals(cpf.getNumber(), "123.456.789-00");
+        assertEquals("123.456.789-00", cpf.getNumber());
     }
 }

@@ -15,6 +15,6 @@ class EmailTest {
     @Test
     void shouldCreateEmailValid() {
         final var email = new Email("email@email.com");
-        assertEquals(email.getAddress(), "email@email.com");
+        assertEquals("email@email.com", email.getAddress());
     }
 }

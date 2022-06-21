@@ -16,7 +16,7 @@ class TelephoneTest {
     @Test
     void shouldCreateTelephoneValid() {
         final var telephone = new Telephone("47", "999999999");
-        assertEquals(telephone.getNumber(), "999999999");
-        assertEquals(telephone.getDdd(), "47");
+        assertEquals("999999999", telephone.getNumber());
+        assertEquals("47", telephone.getDdd());
     }
 }
