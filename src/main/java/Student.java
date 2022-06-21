@@ -7,6 +7,12 @@ public class Student {
     private Email email;
     private List<Telephone> telephones = new ArrayList<>();
 
+    public Student(String name, Cpf cpf, Email email) {
+        this.name = name;
+        this.cpf = cpf;
+        this.email = email;
+    }
+
     public void addTelephones(String ddd, String number) {
         telephones.add(new Telephone(ddd, number));
     }
