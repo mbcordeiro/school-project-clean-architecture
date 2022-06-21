@@ -1,4 +1,4 @@
-package br.com.school.student;
+package br.com.school.domain.student;
 
 import org.junit.jupiter.api.Test;
 
