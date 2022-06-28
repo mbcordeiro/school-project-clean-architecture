@@ -18,4 +18,20 @@ public class Student {
     public void addTelephones(String ddd, String number) {
         telephones.add(new Telephone(ddd, number));
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public Cpf getCpf() {
+        return cpf;
+    }
+
+    public Email getEmail() {
+        return email;
+    }
+
+    public List<Telephone> getTelephones() {
+        return telephones;
+    }
 }
