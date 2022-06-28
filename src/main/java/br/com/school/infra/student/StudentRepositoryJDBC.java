@@ -39,12 +39,12 @@ public class StudentRepositoryJDBC implements StudentRepository {
     public Student findByCpf(Cpf cpf) {
         try {
             var sql = "SELECT id, nome, email FROM Aluno WHERE = ?";
-            var preparedStatement = connection.prepareStatement(sql);
+            var  preparedStatement = connection.prepareStatement(sql);
             preparedStatement.setString(1, cpf.getNumber());
 
             var resultSet = preparedStatement.executeQuery();
             if (!resultSet.next()) {
-                throw new RuntimeException("Student not found cpf=" + cpf);
+                throw new StudentNotFoundException(cpf);
             }
             final var name = resultSet.getString("name");
             final var email = new Email(resultSet.getString("email"));
