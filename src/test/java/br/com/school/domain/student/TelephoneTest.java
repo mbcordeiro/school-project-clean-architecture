@@ -19,4 +19,13 @@ class TelephoneTest {
         assertEquals("999999999", telephone.getNumber());
         assertEquals("47", telephone.getDdd());
     }
+
+    @Test
+    void shouldReturnErrorWhenExceedsTheMaximumNumberOfRegisteredTelephones() {
+        final var student =
+                new Student("Name", new Cpf("123.456.789-00"), new Email("email@email.com"));
+        student.addTelephones("47", "999999999");
+        student.addTelephones("47", "999999999");
+        assertThrows(IllegalArgumentException.class, () -> student.addTelephones("47", "999999999"));
+    }
 }
