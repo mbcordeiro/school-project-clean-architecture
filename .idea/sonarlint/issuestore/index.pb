@@ -23,8 +23,6 @@ n
 >src/main/java/br/com/school/domain/student/CipherPassword.java,2\a\2a41375109ff9584d32d12b45477fc5115d8fef0
 c
 3src/main/java/br/com/school/domain/student/Cpf.java,8\a\8a73544951ca8a5df9291a230ea1fc7c3c4f4b9d
-g
-7src/main/java/br/com/school/domain/student/Student.java,c\d\cd69f86f978fc01e26d0a8154af06aad4649ce69
 p
 @src/main/java/br/com/school/infra/student/CipherPasswordMD5.java,4\4\442633b8ea5309ef191d55e7d440b4a8854f82e8
 {

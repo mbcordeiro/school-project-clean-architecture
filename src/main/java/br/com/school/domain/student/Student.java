@@ -19,6 +19,8 @@ public class Student {
     }
 
     public void addTelephones(String ddd, String number) {
+        if (telephones.size() == 2)
+            throw new IllegalArgumentException("Maximum number of phones exceeded");
         telephones.add(new Telephone(ddd, number));
     }
 
