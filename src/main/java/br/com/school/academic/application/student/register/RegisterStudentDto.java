@@ -1,6 +1,6 @@
 package br.com.school.academic.application.student.register;
 
-import br.com.school.academic.domain.student.Cpf;
+import br.com.school.shared.domain.Cpf;
 import br.com.school.academic.domain.student.Email;
 import br.com.school.academic.domain.student.Student;
 

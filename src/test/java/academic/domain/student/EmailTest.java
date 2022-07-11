@@ -1,5 +1,6 @@
-package br.com.school.academic.domain.student;
+package academic.domain.student;
 
+import br.com.school.academic.domain.student.Email;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

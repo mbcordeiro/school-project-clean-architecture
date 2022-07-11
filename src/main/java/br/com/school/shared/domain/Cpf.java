@@ -1,4 +1,4 @@
-package br.com.school.academic.domain.student;
+package br.com.school.shared.domain;
 
 public class Cpf {
     private String number;

@@ -2,6 +2,7 @@ package br.com.school.academic.infra.student;
 
 import br.com.school.academic.domain.student.*;
 import br.com.school.domain.student.*;
+import br.com.school.shared.domain.Cpf;
 
 import java.sql.Connection;
 import java.sql.SQLException;

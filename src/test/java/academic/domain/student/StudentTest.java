@@ -1,5 +1,8 @@
-package br.com.school.academic.domain.student;
+package academic.domain.student;
 
+import br.com.school.academic.domain.student.Email;
+import br.com.school.academic.domain.student.Student;
+import br.com.school.shared.domain.Cpf;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

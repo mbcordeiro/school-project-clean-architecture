@@ -1,6 +1,6 @@
 package br.com.school.gamification.infra.seal;
 
-import br.com.school.academic.domain.student.Cpf;
+import br.com.school.shared.domain.Cpf;
 import br.com.school.gamification.domain.seal.Seal;
 import br.com.school.gamification.domain.seal.SealRepository;
 

@@ -1,6 +1,6 @@
 package br.com.school.gamification.domain.seal;
 
-import br.com.school.academic.domain.student.Cpf;
+import br.com.school.shared.domain.Cpf;
 
 import java.util.List;
 

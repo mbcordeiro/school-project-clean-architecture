@@ -1,6 +1,6 @@
 package br.com.school.academic.infra.student;
 
-import br.com.school.academic.domain.student.Cpf;
+import br.com.school.shared.domain.Cpf;
 import br.com.school.academic.domain.student.Student;
 import br.com.school.academic.domain.student.StudentRepository;
 
