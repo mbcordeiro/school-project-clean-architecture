@@ -2,6 +2,8 @@ package br.com.school.applicationstudent.register;
 
 import br.com.school.application.student.register.RegisterStudent;
 import br.com.school.application.student.register.RegisterStudentDto;
+import br.com.school.domain.LogListener;
+import br.com.school.domain.PublisherEvent;
 import br.com.school.domain.student.Cpf;
 import br.com.school.domain.student.Student;
 import br.com.school.infra.student.StudentRepositoryInMemory;
@@ -12,10 +14,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class RegisterStudentTest {
     @Test
     void ShouldPersistStudent() {
-        StudentRepositoryInMemory studentRepositoryInMemory = new StudentRepositoryInMemory();
-        RegisterStudent registerStudent = new RegisterStudent(studentRepositoryInMemory);
+        final var studentRepositoryInMemory = new StudentRepositoryInMemory();
+        final var publisherEvent = new PublisherEvent();
+        final var registerStudent = new RegisterStudent(studentRepositoryInMemory, publisherEvent);
 
-        RegisterStudentDto registerStudentDto =
+        final var registerStudentDto =
                 new RegisterStudentDto("Name Fullname", "123.456.789-00", "email@email.com");
 
         registerStudent.execute(registerStudentDto);
