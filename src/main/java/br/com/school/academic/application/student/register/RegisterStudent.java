@@ -1,6 +1,6 @@
 package br.com.school.academic.application.student.register;
 
-import br.com.school.academic.domain.PublisherEvent;
+import br.com.school.shared.domain.event.PublisherEvent;
 import br.com.school.academic.domain.student.Student;
 import br.com.school.academic.domain.student.StudentRegisteredEvent;
 import br.com.school.academic.domain.student.StudentRepository;

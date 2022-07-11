@@ -1,9 +1,11 @@
 package br.com.school.academic.domain.student;
 
-import br.com.school.academic.domain.Event;
+import br.com.school.shared.domain.event.Event;
 import br.com.school.shared.domain.Cpf;
+import br.com.school.shared.domain.event.EventType;
 
 import java.time.LocalDateTime;
+import java.util.Map;
 
 public class StudentRegisteredEvent implements Event {
     private final Cpf cpf;
@@ -15,8 +17,18 @@ public class StudentRegisteredEvent implements Event {
     }
 
     @Override
-    public LocalDateTime momentEvent() {
+    public LocalDateTime eventMoment() {
         return momentEvent;
+    }
+
+    @Override
+    public EventType eventType() {
+        return EventType.STUDENT_REGISTERED;
+    }
+
+    @Override
+    public Map<String, Object> eventInfo() {
+        return Map.of("cpf", cpf);
     }
 
     public Cpf getCpf() {

@@ -1,12 +1,12 @@
-package br.com.school.gamification.domain.seal;
+package br.com.school.gamification.domain.badge;
 
 import br.com.school.shared.domain.Cpf;
 
-public class Seal {
+public class Badge {
     private Cpf cpf;
     private String name;
 
-    public Seal(Cpf cpf, String name) {
+    public Badge(Cpf cpf, String name) {
         this.cpf = cpf;
         this.name = name;
     }

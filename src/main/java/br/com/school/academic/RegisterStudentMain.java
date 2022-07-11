@@ -2,8 +2,8 @@ package br.com.school.academic;
 
 import br.com.school.academic.application.student.register.RegisterStudent;
 import br.com.school.academic.application.student.register.RegisterStudentDto;
-import br.com.school.academic.domain.LogListener;
-import br.com.school.academic.domain.PublisherEvent;
+import br.com.school.academic.domain.student.LogListener;
+import br.com.school.shared.domain.event.PublisherEvent;
 import br.com.school.academic.infra.student.StudentRepositoryInMemory;
 
 public class RegisterStudentMain {

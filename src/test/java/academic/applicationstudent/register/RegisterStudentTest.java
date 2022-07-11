@@ -2,7 +2,7 @@ package academic.applicationstudent.register;
 
 import br.com.school.academic.application.student.register.RegisterStudentDto;
 import br.com.school.academic.application.student.register.RegisterStudent;
-import br.com.school.academic.domain.PublisherEvent;
+import br.com.school.shared.domain.event.PublisherEvent;
 import br.com.school.shared.domain.Cpf;
 import br.com.school.academic.domain.student.Student;
 import br.com.school.academic.infra.student.StudentRepositoryInMemory;

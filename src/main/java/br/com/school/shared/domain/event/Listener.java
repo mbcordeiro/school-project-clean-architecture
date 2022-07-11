@@ -1,4 +1,4 @@
-package br.com.school.academic.domain;
+package br.com.school.shared.domain.event;
 
 public abstract class Listener {
     public void process(Event event) {
